@@ -2,7 +2,6 @@ package com.example;
 
 import javafx.stage.Stage;
 import org.update4j.LaunchContext;
-import org.update4j.inject.InjectTarget;
 import org.update4j.service.Launcher;
 
 import java.io.IOException;
@@ -14,15 +13,6 @@ public class BusinessApp implements Launcher {
 
     private static final Path LOCK_DIR = Paths.get(System.getProperty("user.home"), ".myapp");
 
-    @InjectTarget
-    private Stage primaryStage;
-
-    private static Stage stage;
-
-    public static void main(String[] args) {
-        System.out.println("[main] Hello, world!");
-    }
-
     @Override
     public void run(LaunchContext launchContext) {
         try {
@@ -30,13 +20,15 @@ public class BusinessApp implements Launcher {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        stage = primaryStage;
+        Stage stage = new Stage();
+        stage.setTitle("POC da biblioteca Update4j");
+        stage.setHeight(200);
+        stage.setWidth(300);
         stage.show();
     }
 
     @Override
     public long version() {
-        return Launcher.super.version();
+        return 0;
     }
 }

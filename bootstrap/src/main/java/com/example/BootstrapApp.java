@@ -13,11 +13,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 public class BootstrapApp extends Application implements Delegate {
-
-    public static void main(String[] args) {
-        launch();
-    }
-
     @Override
     public void start(Stage stage) throws Exception {
         Configuration config = null;
@@ -41,6 +36,10 @@ public class BootstrapApp extends Application implements Delegate {
 
     @Override
     public void main(List<String> list) throws Throwable {
+        launch();
+    }
+
+    public static void main(String[] args) {
         launch();
     }
 }
