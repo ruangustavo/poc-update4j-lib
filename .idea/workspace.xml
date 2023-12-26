@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0528f3-3515-45ce-9254-b916b4edce5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/src/main/resources/META-INF/services/org.update4j.service.Delegate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/resources/META-INF/services/org.update4j.service.Launcher" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bf0528f3-3515-45ce-9254-b916b4edce5b" name="Changes" comment="feat: create `create-config` submodule">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/create-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/create-config/src/main/java/com/example/CreateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/create-config/src/main/java/com/example/CreateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,36 +41,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Ruan Gustavo/Documents/poc-update4j",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.49110672",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Ruan Gustavo/Documents/poc-update4j&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.254023&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn archetype:generate -DgroupId=com.example -DartifactId=business" />
       <command value="mvn archetype:generate -DgroupId=com.example -DartifactId=bootstrap" />
+      <command value="mvn archetype:generate -DgroupId=com.example -DartifactId=create-config" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="BusinessApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.BusinessApp" />
-      <module name="business" />
+  <component name="RunManager" selected="Application.CreateConfig">
+    <configuration name="BootstrapApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.BootstrapApp" />
+      <module name="bootstrap" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\javafx-sdk-17.0.9\lib&quot; --add-modules=javafx.controls,javafx.base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.CreateConfig" />
+      <module name="create-config" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.*" />
@@ -89,7 +98,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BusinessApp" />
+        <item itemvalue="Application.CreateConfig" />
+        <item itemvalue="Application.BootstrapApp" />
       </list>
     </recent_temporary>
   </component>
@@ -105,11 +115,60 @@
       <workItem from="1702579625211" duration="1865000" />
       <workItem from="1702584057913" duration="4497000" />
       <workItem from="1702920535380" duration="924000" />
+      <workItem from="1702938328985" duration="698000" />
+      <workItem from="1703188199325" duration="1500000" />
+      <workItem from="1703191475603" duration="46000" />
+      <workItem from="1703191577661" duration="4175000" />
+      <workItem from="1703270083830" duration="2518000" />
+      <workItem from="1703450626965" duration="86000" />
+      <workItem from="1703599327160" duration="708000" />
     </task>
+    <task id="LOCAL-00001" summary="chore: add IDE related files">
+      <option name="closed" value="true" />
+      <created>1702938374272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702938374272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: update old maven version">
+      <option name="closed" value="true" />
+      <created>1703195039555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703195039555</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: create `create-config` submodule">
+      <option name="closed" value="true" />
+      <created>1703270874633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703270874633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: add IDE related files" />
+    <MESSAGE value="fix: update old maven version" />
+    <MESSAGE value="feat: create `create-config` submodule" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: create `create-config` submodule" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
